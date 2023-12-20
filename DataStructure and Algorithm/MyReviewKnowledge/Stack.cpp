@@ -61,8 +61,7 @@ void printStack(Stack stack)
     while (node != NULL)
     {
         cout << "| \t " << node->data << " \t | \n";
-        node = node->pNext;
-    }
+        node = node->pNext
 }
 
 int main(int argc, char const *argv[])
