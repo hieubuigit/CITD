@@ -2,7 +2,7 @@
  * Name: Hieu Bui Van
  * StudentId: 23410014
  * Class: LT.2023.01
- * Des: Exam 1: binary search tree
+ * Des: Exam 1: Binary search tree
  */
 
 #include <iostream>

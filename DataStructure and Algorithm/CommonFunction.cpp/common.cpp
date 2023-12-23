@@ -3,7 +3,7 @@
 #include <ctime>
 using namespace std;
 
-int randomData(int min, int max, int qtyFrom, int qtyTo)
+int randomData(int min, int max)
 {
     return min + (rand() % (max - min + 1));
 }
@@ -23,8 +23,10 @@ int main(int argc, char const *argv[])
 {
     srand(time(0));
 
-    int arr[1000];
-    cout << initWithRange(arr, 865, 988, 45, 95);
+    for (int i = 0; i < 100; i++)
+    {
+        cout << randomData(1, 100) << " ";
+    }
 
     return 0;
 }
