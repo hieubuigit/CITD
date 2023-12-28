@@ -20,9 +20,6 @@
             <a href="./view/ds_phong.php">Danh sach phong</a>
         </li>
         <li>
-            <a href="./view/update_phong.php">Update phong</a>
-        </li>
-        <li>
             <a href="./view/liet_ke_kh.php">Liet ke khach hang</a>
         </li>
     </ol>

@@ -1,17 +1,20 @@
 <?php
 
+include "../models/khach_hang.php";
+
 $maKH = $_POST["maKH"];
 $tenKH = $_POST["tenKH"];
 $sdt =  $_POST["sdt"];
 $cccd = $_POST["cccd"];
 
-echo $maKH;
-echo $tenKH;
-echo $sdt;
-echo $cccd;
-
 // Add to database here
-
+$kh = new KhachHang();
+$resultAdd = $kh->addKhachHang($maKH, $tenKH, $sdt, $cccd);
+if ($resultAdd) {
+    echo "Add successfully";
+} else {
+    die("Add failed");
+}
 
 ?>
 <!DOCTYPE html>

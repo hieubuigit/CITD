@@ -1,9 +1,11 @@
 <?php
 
-// Get customers in database fill to select
+include "../models/khach_hang.php";
 
-
+$kh = new KhachHang();
+$listKH = $kh->dropdownListKH();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,12 +18,13 @@
 <body>
 
     <h1>Thêm hoá đơn</h1>
-    <a href="./index.php">Home</a>
     <form action="../controller/exe_add_hoa_don.php" method="post">
         <label for="tenKH">
             Tên khách hàng:
             <select name="maKH" id="maKH" placeholder="Tên khách hàng">
-                <option value="<?php echo "mKH"; ?>">value 1</option>
+                <?php foreach ($listKH as $kh) { ?>
+                    <option value="<?php echo $kh["MAKH"] ?>"><?php echo $kh["TENKH"] ?></option>
+                <?php  } ?>
             </select>
         </label>
         <br>
