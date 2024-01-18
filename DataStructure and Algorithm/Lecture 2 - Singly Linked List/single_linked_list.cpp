@@ -97,13 +97,22 @@ int main(int argc, char const *argv[])
     initList(l);
 
     // Init note
-    Node *p1 = initNode(1);
-    Node *p2 = initNode(22);
-    Node *p3 = initNode(333);
+    Node *p1 = initNode(79);
+    cout << p1->data << endl;
+    cout << (*p1).data << endl;
+    cout << p1->pNext << endl;
 
-    // Add node to list
-    addHead(l, p1);
-    addTail(l, p3);
+
+    // l.pHead = p1;
+    // cout << l.pHead->data << endl;
+    // cout << l.pTail << endl;
+
+    // Node *p2 = initNode(22);
+    // Node *p3 = initNode(333);
+
+    // // Add node to list
+    // addHead(l, p1);
+    // addTail(l, p3);
 
     // Print list
 
@@ -116,8 +125,8 @@ int main(int argc, char const *argv[])
     // Delete node
 
     // Test
-    int p01 = 100;
-    cout << &p01 << endl;
+    // int p01 = 100;
+    // cout << &p01 << endl;
 
 
     return 0;
